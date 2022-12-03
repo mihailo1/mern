@@ -7,7 +7,9 @@
     "precommit": "npm test",
     "prepush": "npm test",
     "heroku:add": "heroku git:remote -a",
-    "deploy:heroku": "git subtree push --prefix server heroku master"
+    "deploy:heroku": "git subtree push --prefix server heroku master",
+    "client": "cd client; yarn; yarn start",
+    "server": "cd server; npm i; npm start"
   },
   "engines": {
     "node": ">=16.0.0",
